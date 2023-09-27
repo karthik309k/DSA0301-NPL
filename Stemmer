@@ -1,0 +1,15 @@
+import nltk
+from nltk.stem import PorterStemmer
+nltk.download("punkt")
+stemmer = PorterStemmer()
+sentences = [
+    "I am running in the park",
+    "The running shoes are on sale",
+    "She ran to catch the bus"]
+for sentence in sentences:
+    words = nltk.word_tokenize(sentence)
+    stemmed_words = [stemmer.stem(word) for word in words]
+    stemmed_sentence = " ".join(stemmed_words)
+    print(f"Original: {sentence}")
+    print(f"Stemmed: {stemmed_sentence}")
+    print()
