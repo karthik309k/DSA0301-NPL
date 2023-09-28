@@ -1,0 +1,10 @@
+import random
+
+# Define sentence patterns
+sentence_patterns = [
+    "The {noun} {verb} {adjective}.",
+    "{Noun} {verb} {adjective} {noun}.",
+    "I {verb} {adjective} {noun}.",
+    "She {verb} {noun}.",
+    "He {verb} {adjective} {noun} {adverb}.",
+]
